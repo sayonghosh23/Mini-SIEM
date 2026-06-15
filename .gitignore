@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+venv/
+.env
+siem.db
+node_modules/
+
