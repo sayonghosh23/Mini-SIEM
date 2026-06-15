@@ -15,3 +15,13 @@ A Security Information and Event Management (SIEM) dashboard built with Python a
 - FastAPI
 - SQLite
 - React
+
+
+## Current Features
+
+- Log Ingestion API
+- SQLite Database Storage
+- Threat Detection Engine
+- Alert Generation
+- Log Search
+- Attack Simulation
