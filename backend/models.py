@@ -8,3 +8,11 @@ class Log(Base):
     source = Column(String)
     event = Column(String)
     severity = Column(String)
+
+class Alert(Base):
+    __tablename__ = "alerts"
+
+    id = Column(Integer, primary_key=True)
+    event = Column(String)
+    severity = Column(String)
+    status = Column(String)

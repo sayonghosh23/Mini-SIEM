@@ -1,15 +1,17 @@
 def detect_threat(event):
 
-    suspicious = [
-        "failed login",
-        "port scan",
-        "brute force"
-    ]
-
     event = event.lower()
 
-    for keyword in suspicious:
+    rules = {
+        "failed login": "HIGH",
+        "port scan": "HIGH",
+        "brute force": "CRITICAL",
+        "sql injection": "CRITICAL",
+        "xss attack": "MEDIUM"
+    }
+
+    for keyword, severity in rules.items():
         if keyword in event:
-            return "HIGH"
+            return severity
 
     return "LOW"
